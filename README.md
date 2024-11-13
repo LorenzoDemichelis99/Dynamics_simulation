@@ -8,6 +8,6 @@ The file structure is the following: simulation_data.jl contains the code that d
 
 ## Dynamics implemented on the graph
 
-Let ![Equation]([https://quicklatex.com/cache3/11/ql_804a9efb50378d004773ddda9bfbdd11_l3.png](https://latex.codecogs.com/svg.image?$G=(V,E)$)) be the graph on which the dynamics is defined, with ![Equation](https://quicklatex.com/cache3/7d/ql_2a8db369ba88eed4c12181089182d57d_l3.png) being the node set and ![Equation](https://quicklatex.com/cache3/5d/ql_7cc63468755bc569cee6e4e976f3bf5d_l3.png) being the edge set; the evolution of the degree of freedom ![Equation](https://quicklatex.com/cache3/00/ql_73778c06fcd87b534a5bccb5b487e600_l3.png) is determined by the following stochastic differential equation:
+Let ![Equation](https://latex.codecogs.com/png.image?\dpi{110}&space;G=(V,E)) be the graph on which the dynamics is defined, with ![Equation](https://quicklatex.com/cache3/7d/ql_2a8db369ba88eed4c12181089182d57d_l3.png) being the node set and ![Equation](https://quicklatex.com/cache3/5d/ql_7cc63468755bc569cee6e4e976f3bf5d_l3.png) being the edge set; the evolution of the degree of freedom ![Equation](https://quicklatex.com/cache3/00/ql_73778c06fcd87b534a5bccb5b487e600_l3.png) is determined by the following stochastic differential equation:
 
 ![Equation](https://quicklatex.com/cache3/58/ql_553894d45244983aeaf2f5c7daea0958_l3.png)
