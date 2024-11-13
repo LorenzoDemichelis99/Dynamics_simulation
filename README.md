@@ -9,7 +9,8 @@ The file structure is the following: simulation_data.jl contains the code that d
 ## Dynamics implemented on the graph
 
 Let $G=(V,E)$ be the graph on which the dynamics is defined, with $V$ being the node set and $E$ being the edge set; the evolution of the degree of freedom $x_{i}(t)$, with $i \in V$, is determined by the following stochastic differential equation:
-
+```math
 \begin{equation}
     \frac{dx_{i}}{dt} = f[x_{i}(t)] + \sum_{j \in \partial i} J_{ij} x_{j}(t) + \eta_{i}(t)
 \end{equation}
+```
