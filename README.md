@@ -21,3 +21,16 @@ with $f[x_{i}(t)]$ being the local term of the dynamics, $\partial i$ being the 
     & \langle \eta_{i}(t) \eta_{j}(t') \rangle = 2 D \delta_{i,j} \delta(t-t')
 \end{align*}
 ```
+The equations describing the evolution of the degrees of freedom are integrated using the Euler-Maruyama scheme, where time is discretized as $t=n\Delta$, with $\Delta$ being a small time step. By setting $x_{i}^{n} = x(t=n\Delta)$ and by choosing the Ito convention for the noise, $\Delta\eta_{i}^{n} = \int_{n\Delta}^{(n+1)\Delta} dt \eta_{i}(t)$, the equations of the dynamics in discrete time becomes:
+```math
+\begin{equation}
+    x_{i}^{n+1} = x_{i}^{n} + f[x_{i}^{n}] \Delta + \sum_{j \in \partial i} J_{ij} x_{j}^{n} \Delta + \Delta \eta_{i}^{n}
+\end{equation}
+```
+with $\Delta\eta_{i}^{n}$ being such that:
+```math
+\begin{align*}
+    & \langle \Delta\eta_{i}^{n} \rangle = 0 \\
+    & \langle \Delta\eta_{i}^{n} \Delta\eta_{j}^{n'} \rangle = 2 D \delta_{i,j} \Delta \delta_{n,n'}
+\end{align*}
+```
