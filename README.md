@@ -14,7 +14,7 @@ Let $G=(V,E)$ be the graph on which the dynamics is defined, with $V$ being the 
     \frac{dx_{i}}{dt} = f[x_{i}(t)] + \sum_{j \in \partial i} J_{ij} x_{j}(t) + \eta_{i}(t)
 \end{equation}
 ```
-with $f[x_{i}(t)]$ being the local term of the dynamics, $\partial i$ being the neighborhood of node $i$, $J_{ij} being the coupling constant between $x_{i}(t)$ and $x_{j}(t)$ and $\eta_{i}(t)$ being the noise, which has the following properties:
+with $f[x_{i}(t)]$ being the local term of the dynamics, $\partial i$ being the neighborhood of node $i$, $J_{ij}$ being the coupling constant between $x_{i}(t)$ and $x_{j}(t)$ and $\eta_{i}(t)$ being the noise, which has the following properties:
 ```math
 \begin{align*}
     & \langle \eta_{i}(t) \rangle = 0 \\
