@@ -1,0 +1,1 @@
+This repository contains a Jupyter notebook and some Julia files to implement the simulation of a generic dynamics with linear couplings on a generic graph, with the possibility of introducing also an additive noise. 
